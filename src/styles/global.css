@@ -1,32 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap');
 
 :root {
-  /* Paleta semántica */
-  --color-brand-600: #81345F;
+  --ink: #24131f;
+  --brand: #682a4e;
+  --brand-dark: #552342;
+  --accent: #b8889d;
+  --paper: #faf7f4;
+  --line: #d8c4cd;
+  
+  --sans: 'DM Sans', Arial, sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+  
+  --color-brand-600: #682a4e;
   --color-brand-800: #552342;
   --color-brand-100: #F3E8EE;
   
-  --color-ink: #242128;
-  --color-canvas: #FAF7F4;
+  --color-ink: #24131f;
+  --color-canvas: #faf7f4;
   --color-surface: #FFFFFF;
-  --color-border: #DDCED6;
-  --color-muted: #625B62;
+  --color-border: #d8c4cd;
+  --color-muted: #51454c;
 
-  /* Tipografía */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
   
-  /* Radios y Sombras */
   --radius-card: 12px;
-  --radius-button: 8px;
+  --radius-button: 0px;
   --shadow-hover: 0 10px 30px rgba(85, 35, 66, 0.08);
   
-  /* Espaciados */
   --max-width: 1200px;
-  --px-desktop: 48px;
+  --px-desktop: 64px;
   --px-tablet: 32px;
-  --px-mobile: 20px;
+  --px-mobile: 24px;
 }
+
 
 * {
   box-sizing: border-box;

@@ -80,64 +80,83 @@ import '../styles/global.css';
 </html>
 
 <style>
+	.skip { position: absolute; left: -9999px; top: 8px; background: #fff; padding: 12px; z-index: 200; }
+	.skip:focus { left: 8px; }
+	
 	.site-header {
+		height: 76px;
+		padding: 0 clamp(24px, 4.1vw, 64px);
+		display: flex;
+		align-items: center;
+		gap: 28px;
+		border-bottom: 1px solid var(--line);
+		background: rgba(250, 247, 244, .96);
 		position: sticky;
 		top: 0;
-		background-color: rgba(250, 247, 244, 0.95);
-		backdrop-filter: blur(8px);
 		z-index: 100;
-		border-bottom: 1px solid var(--color-border);
-		height: 64px;
-		display: flex;
-		align-items: center;
+		backdrop-filter: blur(8px);
 	}
-
-	.header-inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-	}
-
+	
 	.brand {
-		font-family: var(--font-display);
-		font-size: 24px;
-		font-weight: 600;
-		color: var(--color-brand-800);
+		font: 400 clamp(25px, 2.1vw, 34px)/1 var(--serif);
+		text-decoration: none;
+		white-space: nowrap;
+		color: var(--ink);
 	}
-
-	.main-nav {
-		display: none;
+	
+	.nav {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: clamp(16px, 2vw, 35px);
+		font-size: 13px;
 	}
-
-	@media (min-width: 768px) {
-		.site-header {
-			height: 80px;
-		}
-		.main-nav {
-			display: flex;
-			align-items: center;
-			gap: 32px;
-		}
-		
-		.main-nav a:not(.btn-primary) {
-			font-size: 15px;
-			font-weight: 500;
-			color: var(--color-ink);
-		}
-
-		.main-nav a:not(.btn-primary):hover,
-		.main-nav a[aria-current="page"] {
-			color: var(--color-brand-600);
-			text-decoration: underline;
-			text-underline-offset: 4px;
-		}
+	
+	.nav a:not(.nav-cta) {
+		text-decoration: none;
+		white-space: nowrap;
+		color: var(--ink);
+	}
+	.nav a:hover {
+		text-decoration: underline;
+		text-underline-offset: 7px;
+	}
+	
+	.nav-cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 18px;
+		background: var(--brand);
+		color: white !important;
+		text-decoration: none !important;
+		text-transform: uppercase;
+		letter-spacing: .18em;
+		font-weight: 700;
+		font-size: 11px;
+		padding: 18px 27px;
+		transition: background .18s;
+	}
+	.nav-cta:hover { background: var(--brand-dark); }
+	
+	@media(max-width:1020px) {
+		.nav { gap: 15px; }
+		.nav a:not(.nav-cta) { display: none; }
+	}
+	@media(max-width:700px) {
+		.site-header { height: 66px; padding-inline: 20px; }
+		.brand { font-size: 25px; }
+		.nav-cta { padding: 13px 14px; font-size: 10px; letter-spacing: .08em; }
+	}
+	@media(max-width:420px) {
+		.nav-cta { font-size: 0; gap: 0; }
+		.nav-cta::after { content: 'Contacto'; font-size: 11px; }
 	}
 
 	.site-footer {
-		background-color: var(--color-brand-100);
+		background-color: var(--brand-dark);
+		color: var(--color-surface);
 		padding: 64px 0 32px;
-		margin-top: 64px;
 	}
 
 	.footer-inner {
@@ -154,7 +173,15 @@ import '../styles/global.css';
 	.footer-brand p {
 		margin-top: 8px;
 		font-size: 14px;
-		color: var(--color-muted);
+		color: rgba(255,255,255,0.7);
+	}
+
+	.footer-contact-info a, .footer-links a, .footer-legal a {
+		color: var(--color-surface);
+		text-decoration: none;
+	}
+	.footer-contact-info a:hover, .footer-links a:hover, .footer-legal a:hover {
+		text-decoration: underline;
 	}
 
 	.footer-links, .footer-legal {
@@ -165,11 +192,10 @@ import '../styles/global.css';
 
 	.footer-links a, .footer-legal a {
 		font-size: 14px;
-		color: var(--color-ink);
 	}
 
 	.footer-legal p {
 		font-size: 12px;
-		color: var(--color-muted);
+		color: rgba(255,255,255,0.5);
 	}
 </style>
