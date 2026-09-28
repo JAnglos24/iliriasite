@@ -1,0 +1,175 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/iliria-viveros-favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/iliria-viveros-favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Iliria Viveros | Abogada y Maestra en Amparo</title>
+		<meta name="description" content="Estrategia jurídica para asuntos que requieren una defensa cuidadosa. Amparo, derecho laboral y fiscal." />
+
+		<!-- Open Graph / Redes Sociales -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://iliriaviveros.com/" />
+		<meta property="og:title" content="Iliria Viveros | Defensa Legal" />
+		<meta property="og:description" content="Abogada especialista en amparo, derecho laboral y defensa administrativa/fiscal. Consulta tu caso hoy." />
+		<meta property="og:image" content="/images/hero.png" />
+		
+		<!-- Marcado Estructurado JSON-LD -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LegalService",
+			"name": "Iliria Hernández Viveros - Consultora Jurídica",
+			"image": "https://iliriaviveros.com/images/hero.png",
+			"url": "https://iliriaviveros.com",
+			"telephone": "+525581807624",
+			"email": "iliriaviveros@gmail.com",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "MX"
+			},
+			"areaServed": "México",
+			"knowsAbout": ["Juicio de Amparo", "Derecho Laboral", "Derecho Fiscal", "Derecho Administrativo"]
+		}
+		</script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<div class="brand">Iliria Viveros</div>
+				<nav class="main-nav">
+					<a href="#" aria-current="page">Inicio</a>
+					<a href="#areas">Áreas de práctica</a>
+					<a href="#trayectoria">Trayectoria</a>
+					<a href="#contacto" class="btn-primary">Plantear mi asunto</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<div class="footer-brand">
+					<strong>Iliria Viveros</strong>
+					<p>Defensa cuidadosa y estrategia jurídica.</p>
+					<div class="footer-contact-info" style="margin-top: 16px;">
+						<a href="mailto:iliriaviveros@gmail.com" style="display: block; font-size: 14px; margin-bottom: 4px;">✉ iliriaviveros@gmail.com</a>
+						<a href="tel:+525581807624" style="display: block; font-size: 14px; margin-bottom: 4px;">☎ 55 8180 7624</a>
+						<a href="https://hamurabi.org" target="_blank" rel="noopener noreferrer" style="display: block; font-size: 14px; font-weight: 500; margin-top: 12px;">Red Hamurabi &rarr;</a>
+					</div>
+				</div>
+				<div class="footer-links">
+					<a href="#areas">Áreas de práctica</a>
+					<a href="#trayectoria">Trayectoria</a>
+					<a href="#contacto">Contacto</a>
+				</div>
+				<div class="footer-legal">
+					<p>&copy; {new Date().getFullYear()} Iliria Hernández Viveros. Todos los derechos reservados.</p>
+					<a href="/privacidad">Aviso de privacidad</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		background-color: rgba(250, 247, 244, 0.95);
+		backdrop-filter: blur(8px);
+		z-index: 100;
+		border-bottom: 1px solid var(--color-border);
+		height: 64px;
+		display: flex;
+		align-items: center;
+	}
+
+	.header-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.brand {
+		font-family: var(--font-display);
+		font-size: 24px;
+		font-weight: 600;
+		color: var(--color-brand-800);
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+	@media (min-width: 768px) {
+		.site-header {
+			height: 80px;
+		}
+		.main-nav {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+		
+		.main-nav a:not(.btn-primary) {
+			font-size: 15px;
+			font-weight: 500;
+			color: var(--color-ink);
+		}
+
+		.main-nav a:not(.btn-primary):hover,
+		.main-nav a[aria-current="page"] {
+			color: var(--color-brand-600);
+			text-decoration: underline;
+			text-underline-offset: 4px;
+		}
+	}
+
+	.site-footer {
+		background-color: var(--color-brand-100);
+		padding: 64px 0 32px;
+		margin-top: 64px;
+	}
+
+	.footer-inner {
+		display: grid;
+		gap: 32px;
+	}
+
+	@media (min-width: 768px) {
+		.footer-inner {
+			grid-template-columns: 2fr 1fr 1fr;
+		}
+	}
+
+	.footer-brand p {
+		margin-top: 8px;
+		font-size: 14px;
+		color: var(--color-muted);
+	}
+
+	.footer-links, .footer-legal {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.footer-links a, .footer-legal a {
+		font-size: 14px;
+		color: var(--color-ink);
+	}
+
+	.footer-legal p {
+		font-size: 12px;
+		color: var(--color-muted);
+	}
+</style>

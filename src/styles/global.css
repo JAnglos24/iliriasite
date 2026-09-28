@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Paleta semántica */
+  --color-brand-600: #81345F;
+  --color-brand-800: #552342;
+  --color-brand-100: #F3E8EE;
+  
+  --color-ink: #242128;
+  --color-canvas: #FAF7F4;
+  --color-surface: #FFFFFF;
+  --color-border: #DDCED6;
+  --color-muted: #625B62;
+
+  /* Tipografía */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Radios y Sombras */
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --shadow-hover: 0 10px 30px rgba(85, 35, 66, 0.08);
+  
+  /* Espaciados */
+  --max-width: 1200px;
+  --px-desktop: 48px;
+  --px-tablet: 32px;
+  --px-mobile: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--color-ink);
+}
+
+h1 {
+  font-size: clamp(42px, 5vw, 76px);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: clamp(24px, 2.5vw, 28px);
+}
+
+p {
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.6;
+  max-width: 72ch;
+}
+
+a {
+  color: var(--color-brand-600);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--px-mobile);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--px-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--px-desktop);
+  }
+}
+
+/* Botones */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-brand-600);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: var(--radius-button);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-800);
+  color: #fff;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-brand-800);
+  padding: 14px 22px;
+  border-radius: var(--radius-button);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid var(--color-brand-600);
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-brand-100);
+}
+
+/* Secciones */
+section {
+  padding: 80px 0;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 128px 0;
+  }
+}
+
+/* Decoración tipográfica bugambilia */
+.section-index {
+  color: var(--color-brand-600);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 16px;
+  border-left: 2px solid var(--color-brand-600);
+  padding-left: 12px;
+}
