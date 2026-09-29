@@ -84,17 +84,17 @@ import Layout from '../layouts/Layout.astro';
     </section>
 	
 	<!-- Enfoque -->
-	<section id="enfoque" style="padding: 80px 20px; background-color: var(--paper);">
-		<div class="container" style="max-width: 900px; margin: 0 auto;">
+	<section id="enfoque" class="enfoque-section">
+		<div class="enfoque-inner">
 			<div class="section-label" style="margin-bottom: 24px;">03 / ENFOQUE</div>
-			<h2 style="font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); margin-bottom: 40px; color: var(--ink);">Conozco el proceso desde ambos lados</h2>
+			<h2 class="enfoque-title">Conozco el proceso desde ambos lados</h2>
 			
-			<div style="margin-bottom: 40px;">
-				<img src="/images/enfoque.png" alt="Iliria Viveros analizando un caso" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; object-position: center 25%;" />
+			<div class="enfoque-img-wrap">
+				<img src="/images/enfoque.png" alt="Iliria Viveros analizando un caso" class="enfoque-img" />
 			</div>
 			
-			<div style="font-size: 19px; line-height: 1.6; color: #51454c; font-family: 'Manrope', var(--sans);">
-				<p style="margin-bottom: 24px;">Antes de definir una defensa, escucho y estudio el asunto sin dar por hecho que dos casos parecidos requieren la misma respuesta. Mi experiencia litigando y trabajando dentro de instituciones públicas y órganos jurisdiccionales me ha permitido conocer cómo se construyen, revisan y sostienen las decisiones de autoridad.</p>
+			<div class="enfoque-body">
+				<p>Antes de definir una defensa, escucho y estudio el asunto sin dar por hecho que dos casos parecidos requieren la misma respuesta. Mi experiencia litigando y trabajando dentro de instituciones públicas y órganos jurisdiccionales me ha permitido conocer cómo se construyen, revisan y sostienen las decisiones de autoridad.</p>
 				<p>Esa perspectiva me ayuda a identificar dónde está el verdadero punto de discusión y a responder con el argumento, las pruebas y la vía jurídica más adecuados para cada caso. Te explicaré con claridad qué opciones veo, qué riesgos existen y por qué recomiendo una estrategia.</p>
 			</div>
 		</div>
@@ -102,7 +102,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<!-- Trayectoria -->
 	<section id="trayectoria" class="trajectory">
-		<div class="container trajectory-inner">
+		<div class="trajectory-inner">
 			<div class="traj-image">
 				<img src="/images/trajectory.png" alt="Retrato de Trayectoria Iliria Viveros" class="portrait-square" />
 			</div>
@@ -112,45 +112,43 @@ import Layout from '../layouts/Layout.astro';
 				<p>Abogada y Maestra en Amparo. Mi compromiso es estudiar tu caso a fondo y hablarte con claridad sobre tus posibilidades reales.</p>
 				<p>Gracias a mi experiencia trabajando dentro de instituciones de gobierno y juzgados, entiendo cómo funciona el sistema desde adentro y uso esa ventaja para que tengas la mejor defensa posible.</p>
 				<ul class="credentials">
-					<li><strong>Consultora Jurídica Independiente</strong> (2025 - Actualidad)<br><span style="font-size: 14px; color: var(--color-muted);">Derecho laboral, fiscal, administrativo y Juicio de amparo.</span></li>
-					<li style="margin-top: 12px;"><strong>Secretaria — Consejo de la Judicatura Federal</strong> (2022 - 2025)<br><span style="font-size: 14px; color: var(--color-muted);">Conocimiento completo de los procesos internos y funcionamiento estructural del órgano de la judicatura federal.</span></li>
-					<li style="margin-top: 12px;"><strong>Administradora de lo Contencioso de Hidrocarburos — SAT</strong> (2018 - 2019)<br><span style="font-size: 14px; color: var(--color-muted);">Litigio contencioso administrativo ante el TFJA. Especialista en amparo contra leyes y Recurso de Revisión.</span></li>
-					<li style="margin-top: 12px;"><strong>Directora de Amparos Directos — SHCP</strong> (2014 - 2018)<br><span style="font-size: 14px; color: var(--color-muted);">Defensa de la constitucionalidad de normas tributarias ante Tribunales Colegiados y la SCJN.</span></li>
-					<li style="margin-top: 16px;">✓ Miembro de la <a href="https://hamurabi.org" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Red Hamurabi</a></li>
+					<li><strong>Consultora Jurídica Independiente</strong> (2025 - Actualidad)<br><span class="cred-note">Derecho laboral, fiscal, administrativo y Juicio de amparo.</span></li>
+					<li><strong>Secretaria — Consejo de la Judicatura Federal</strong> (2022 - 2025)<br><span class="cred-note">Conocimiento completo de los procesos internos y funcionamiento estructural del órgano de la judicatura federal.</span></li>
+					<li><strong>Administradora de lo Contencioso de Hidrocarburos — SAT</strong> (2018 - 2019)<br><span class="cred-note">Litigio contencioso administrativo ante el TFJA. Especialista en amparo contra leyes y Recurso de Revisión.</span></li>
+					<li><strong>Directora de Amparos Directos — SHCP</strong> (2014 - 2018)<br><span class="cred-note">Defensa de la constitucionalidad de normas tributarias ante Tribunales Colegiados y la SCJN.</span></li>
+					<li>✓ Miembro de la <a href="https://hamurabi.org" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Red Hamurabi</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 
 	<!-- Contacto -->
-	<section id="contacto" class="contact" style="background-color: var(--brand-dark); color: var(--surface); padding: 80px 20px;">
-		<div class="container contact-inner" style="max-width: 900px; margin: 0 auto; display: grid; gap: 48px; grid-template-columns: 1fr;">
-			<div>
-				<h2 style="font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); color: #ffffff; margin-bottom: 32px;">Contacto</h2>
-				<p style="font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 40px; max-width: 500px;">Cu&eacute;ntame lo b&aacute;sico sobre tu problema. Leo cada mensaje personalmente para decirte con total honestidad si es una situaci&oacute;n en la que puedo ayudarte.</p>
+	<section id="contacto" class="contact-section">
+		<div class="contact-body">
+			<h2 class="contact-heading">Contacto</h2>
+			<p class="contact-lead">Cu&eacute;ntame lo b&aacute;sico sobre tu problema. Leo cada mensaje personalmente para decirte con total honestidad si es una situaci&oacute;n en la que puedo ayudarte.</p>
+			
+			<div class="contact-links">
+				<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" class="btn-wa">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+					Escribir por WhatsApp
+				</a>
 				
-				<div style="display: flex; flex-direction: column; gap: 24px; max-width: 400px;">
-					<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 12px; background-color: #25D366; color: white; text-decoration: none; padding: 18px 24px; border-radius: 4px; font-weight: 600; font-size: 16px; transition: opacity 0.2s;">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-						Escribir por WhatsApp
+				<div class="contact-secondary">
+					<a href="https://calendly.com/iliriaviveros" target="_blank" rel="noopener noreferrer" class="contact-icon-link">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+						Agendar videollamada en Calendly
 					</a>
-					
-					<div style="display: flex; flex-direction: column; gap: 8px;">
-						<a href="https://calendly.com/iliriaviveros" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 12px; color: white; text-decoration: none; font-weight: 600; font-size: 16px;">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-							Agendar videollamada en Calendly
-						</a>
-						<a href="/docs/NDA_Iliria_Viveros.pdf" download style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: underline; margin-left: 32px;">Descargar formato NDA previo a la sesi&oacute;n</a>
-					</div>
-					
-					<a href="mailto:iliriaviveros@gmail.com" style="display: flex; align-items: center; gap: 12px; color: white; text-decoration: none; font-weight: 600; font-size: 16px; margin-top: 8px;">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-						Enviar un correo electr&oacute;nico
-					</a>
+					<a href="/docs/NDA_Iliria_Viveros.pdf" download class="contact-nda">Descargar formato NDA previo a la sesi&oacute;n</a>
 				</div>
 				
-				<p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 48px; max-width: 500px; line-height: 1.5;">Por tu propia seguridad, no compartas documentos privados en el primer contacto.</p>
+				<a href="mailto:iliriaviveros@gmail.com" class="contact-icon-link">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+					Enviar un correo electr&oacute;nico
+				</a>
 			</div>
+			
+			<p class="contact-disclaimer">Por tu propia seguridad, no compartas documentos privados en el primer contacto.</p>
 		</div>
 	</section>
 
@@ -327,39 +325,56 @@ import Layout from '../layouts/Layout.astro';
 	.step p { font-size: 15px; color: var(--color-muted); }
 
 	/* Trajectory */
+	.trajectory { padding: 72px clamp(20px, 4.1vw, 64px); background: var(--paper); }
 	.trajectory-inner {
 		display: grid;
 		gap: 48px;
 		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 	@media (min-width: 1024px) {
 		.trajectory-inner { grid-template-columns: 40% 60%; }
 	}
+	.traj-content h2 { font-family: var(--serif); font-size: clamp(28px, 3vw, 42px); letter-spacing: -.03em; margin: 8px 0 16px; color: var(--ink); }
+	.traj-content .section-index { font-size: 11px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--brand); }
+	.traj-content > p { font-size: clamp(15px, 1.2vw, 17px); line-height: 1.6; color: #51454c; margin-bottom: 12px; }
 	.credentials {
 		margin-top: 24px;
 		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
 	}
 	.credentials li {
-		margin-bottom: 12px;
 		font-weight: 500;
-		color: var(--color-brand-800);
+		color: var(--ink);
+		font-size: clamp(13px, 1.1vw, 15px);
+		line-height: 1.5;
 	}
+	.cred-note { font-size: 13px; color: #6b5f6a; font-weight: 400; }
+
+	/* Enfoque */
+	.enfoque-section { padding: 72px clamp(20px, 4.1vw, 64px); background-color: var(--paper); }
+	.enfoque-inner { max-width: 900px; margin: 0 auto; }
+	.enfoque-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 48px); margin-bottom: 36px; color: var(--ink); letter-spacing: -.03em; }
+	.enfoque-img-wrap { margin-bottom: 36px; }
+	.enfoque-img { width: 100%; height: auto; max-height: 400px; object-fit: cover; object-position: center 25%; display: block; }
+	.enfoque-body p { font-size: clamp(16px, 1.3vw, 19px); line-height: 1.6; color: #51454c; font-family: 'Manrope', var(--sans); margin-bottom: 20px; }
 
 	/* Contacto */
-	.contact {
-		background-color: var(--color-brand-800);
-		color: var(--color-surface);
-	}
-	.contact h2 { color: var(--color-surface); }
-	.contact .disclaimer { color: var(--color-border); font-size: 14px; margin-top: 16px; }
-	
-	.contact-inner {
-		display: grid;
-		gap: 48px;
-	}
-	@media (min-width: 1024px) {
-		.contact-inner { grid-template-columns: 40% 60%; align-items: start; }
-	}
+	.contact-section { background-color: var(--brand-dark); color: var(--surface); padding: 72px clamp(20px, 4.1vw, 64px); }
+	.contact-body { max-width: 640px; }
+	.contact-heading { font-family: var(--serif); font-size: clamp(36px, 5vw, 64px); color: #ffffff; margin-bottom: 24px; letter-spacing: -.04em; }
+	.contact-lead { font-size: clamp(15px, 1.2vw, 18px); line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 36px; }
+	.contact-links { display: flex; flex-direction: column; gap: 20px; }
+	.btn-wa { display: flex; align-items: center; justify-content: center; gap: 12px; background-color: #25D366; color: white; text-decoration: none; padding: 18px 24px; border-radius: 4px; font-weight: 600; font-size: 16px; transition: opacity 0.2s; width: 100%; max-width: 400px; box-sizing: border-box; }
+	.btn-wa:hover { opacity: 0.88; }
+	.contact-secondary { display: flex; flex-direction: column; gap: 10px; }
+	.contact-icon-link { display: flex; align-items: center; gap: 12px; color: white; text-decoration: none; font-weight: 600; font-size: clamp(14px, 1.1vw, 16px); }
+	.contact-nda { color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: underline; padding-left: 32px; }
+	.contact-disclaimer { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 40px; max-width: 480px; line-height: 1.55; }
 
 	.contact-form-wrapper {
 		background-color: var(--color-surface);
@@ -432,7 +447,7 @@ import Layout from '../layouts/Layout.astro';
 		text-decoration: none; 
 		display: flex; 
 		flex-direction: column; 
-		min-height: 380px; 
+		height: 380px;
 		perspective: 1200px;
 		background: transparent;
 	}
@@ -523,19 +538,24 @@ import Layout from '../layouts/Layout.astro';
 		.hero-visual::after { right: 13px; top: 30px; bottom: 26px; width: 25px; }
 		.vertical-label { right: 20px; font-size: 8px; }
 		
-		.practice { grid-template-columns: repeat(2, 1fr); padding: 48px 20px 55px; row-gap: 30px; }
+		/* Mobile ≤700px: 2-col grid con tarjetas de altura fija */
+		.practice { grid-template-columns: repeat(2, 1fr); padding: 48px 16px 55px; row-gap: 24px; }
 		.practice-intro { margin-bottom: 10px; }
-		.practice-intro h2 { font-size: 42px; }
-		.practice-item { padding: 0 14px; min-height: 190px; }
+		.practice-intro h2 { font-size: 36px; }
+		/* Altura fija = los absolute children tienen referencia */
+		.practice-item { padding: 0 12px; height: 280px; min-height: 0; }
 		.practice-item:nth-of-type(2n) { border-left: 0; }
-		.practice-item h3 { font-size: 25px; }
-		.practice-item .number { font-size: 58px; }
+		.flip-card-front h3 { font-size: 22px; }
+		.practice-item .number { font-size: 52px; }
+		/* En mobile touch: hover no funciona, usar active */
+		.practice-item:hover .flip-card-inner { transform: none; }
+		.practice-item:active .flip-card-inner { transform: rotateY(180deg); }
 	}
 	
 	@media(max-width: 420px) {
 		.actions { align-items: flex-start; flex-direction: column; }
-		.practice { grid-template-columns: 1fr; }
-		.practice-item { border-left: 1px solid var(--line) !important; min-height: auto; padding-bottom: 12px; }
+		.practice { grid-template-columns: 1fr; row-gap: 20px; }
+		.practice-item { border-left: 1px solid var(--line) !important; height: 240px; min-height: 0; padding-bottom: 0; }
 		.practice-item .arrow { margin-top: 12px; }
 	}
 </style>
