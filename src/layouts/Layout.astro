@@ -13,12 +13,17 @@ import '../styles/global.css';
 		<title>Iliria Viveros | Abogada y Maestra en Amparo</title>
 		<meta name="description" content="Estrategia jurídica para asuntos que requieren una defensa cuidadosa. Amparo, derecho laboral y fiscal." />
 
+		<link rel="canonical" href={new URL(Astro.url.pathname, 'https://iliriaviveros.com').href} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+
 		<!-- Open Graph / Redes Sociales -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://iliriaviveros.com/" />
+		<meta property="og:locale" content="es_MX" />
+		<meta property="og:url" content={new URL(Astro.url.pathname, 'https://iliriaviveros.com').href} />
 		<meta property="og:title" content="Iliria Viveros | Defensa Legal" />
 		<meta property="og:description" content="Abogada especialista en amparo, derecho laboral y defensa administrativa/fiscal. Consulta tu caso hoy." />
-		<meta property="og:image" content="/images/hero.png" />
+		<meta property="og:image" content="https://iliriaviveros.com/images/hero.png" />
+		<meta name="twitter:card" content="summary_large_image" />
 		
 		<!-- Marcado Estructurado JSON-LD -->
 		<script type="application/ld+json">
