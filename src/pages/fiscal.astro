@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<article class="page-container">
+		<header class="page-header">
+			<nav class="breadcrumb" aria-label="Navegación secundaria">
+				<a href="/">Inicio</a> &rsaquo; <span>Defensa Fiscal</span>
+			</nav>
+			<span class="page-tag">Especialidad Jurídica</span>
+			<h1>Defensa Fiscal y Contencioso Administrativo</h1>
+			<p class="lead">
+				Estrategia técnica para defender tu patrimonio de créditos fiscales indebidos, congelamiento de cuentas, cancelación de CSD y revisiones del SAT o IMSS.
+			</p>
+		</header>
+
+		<!-- Compliance Fiscal y Prevención -->
+		<section class="compliance-box" aria-labelledby="compliance-title">
+			<div class="compliance-header">
+				<span class="compliance-icon">🏛️</span>
+				<h2 id="compliance-title">Compliance Fiscal y Prevención de Contingencias</h2>
+			</div>
+			<p class="compliance-desc">
+				Estrategias preventivas de gobernanza tributaria para evitar la determinación de créditos fiscales o la inmovilización de la operación de tu empresa.
+			</p>
+			<ul class="compliance-bullets">
+				<li><strong>Diagnóstico de Riesgos de CSD (Sellos Digitales):</strong> Protocolos preventivos para evitar el bloqueo o restricción temporal de Certificados de Sello Digital por inconsistencias reportadas por el SAT.</li>
+				<li><strong>Verificación Preventiva de Proveedores (EFOS y EDOS / Art. 69-B CFF):</strong> Auditorías periódicas a listas negras tributarias para garantizar la materialidad y deducción de operaciones corporativas.</li>
+				<li><strong>Prevención de Inmovilización de Cuentas Bancarias:</strong> Procedimientos de atención previa ante notificaciones por buzón tributario para evitar embargos ejecutorios por créditos fiscales no firmes.</li>
+				<li><strong>Atención Estratégica a Facultades de Comprobación:</strong> Acompañamiento legal preventivo durante revisiones de gabinete, visitas domiciliarias o revisiones electrónicas de autoridades fiscales.</li>
+			</ul>
+		</section>
+
+		<!-- Vías de Impugnación -->
+		<section class="content-section">
+			<h2>Medios de Impugnación y Defensa</h2>
+			<div class="cards-duo">
+				<div class="spec-card">
+					<h3>Recurso de Revocación</h3>
+					<p>Medio de defensa optativo presentado ante la propia autoridad emisora (SAT o IMSS) para corregir resoluciones ilegales sin acudir de inmediato a juicio.</p>
+					<ul>
+						<li>Impugnación de multas por declaraciones u omisiones</li>
+						<li>Aclaración de inconsistencias en buzón tributario</li>
+						<li>Suspensión del procedimiento administrativo de ejecución (PAE)</li>
+					</ul>
+				</div>
+				<div class="spec-card">
+					<h3>Juicio de Nulidad (TFJA)</h3>
+					<p>Juicio contencioso administrativo federal ante el Tribunal Federal de Justicia Administrativa para anular créditos fiscales o resoluciones desfavorables.</p>
+					<ul>
+						<li>Anulación de créditos por visitas domiciliarias o revisiones</li>
+						<li>Impugnación de determinaciones del IMSS, INFONAVIT o PROFECO</li>
+						<li>Garantía del interés fiscal sin menoscabo patrimonial</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Proceso -->
+		<section class="process-section">
+			<h2>Atención a Facultades de Comprobación</h2>
+			<ol class="process-list">
+				<li>
+					<strong>1. Análisis de Materialidad y Fecha Cierta</strong>
+					<p>Estudio de los documentos soporte para demostrar la realidad contable y jurídica de tus deducciones e ingresos.</p>
+				</li>
+				<li>
+					<strong>2. Redacción Técnica de Agravios</strong>
+					<p>Identificación de vicios de procedimiento, caducidad o prescripción para lograr la nulidad llana y simple del crédito.</p>
+				</li>
+				<li>
+					<strong>3. Suspensión de la Ejecución Fiscal</strong>
+					<p>Protección de cuentas bancarias y bienes inmuebles durante todo el tiempo que dure la tramitación del recurso o juicio.</p>
+				</li>
+			</ol>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-box">
+			<h2>¿Recibiste una notificación del SAT o IMSS?</h2>
+			<p>Los plazos en materia fiscal son muy breves (15 a 30 días). Analizo tu notificación de inmediato para definir la mejor estrategia.</p>
+			<div class="cta-actions">
+				<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" class="btn-primary">Consulta Fiscal por WhatsApp &rarr;</a>
+				<a href="mailto:iliriaviveros@gmail.com" class="btn-secondary">Enviar correo electrónico</a>
+			</div>
+		</section>
+	</article>
+</Layout>
+
+<style>
+	.page-container { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+	.breadcrumb { font-size: 13px; color: var(--color-muted); margin-bottom: 20px; }
+	.breadcrumb a { color: var(--brand); text-decoration: none; }
+	.page-tag { display: inline-block; background: var(--color-brand-100); color: var(--brand-dark); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .15em; padding: 6px 12px; border-radius: 4px; margin-bottom: 16px; }
+	.page-header h1 { font: 400 clamp(36px, 4vw, 54px)/1.08 var(--serif); color: var(--ink); margin-bottom: 16px; letter-spacing: -.03em; }
+	.lead { font-size: clamp(17px, 1.3vw, 20px); line-height: 1.6; color: #51454c; margin-bottom: 40px; }
+	
+	.compliance-box { background: var(--paper); border: 2px solid var(--accent); border-radius: 8px; padding: 36px; margin-bottom: 48px; }
+	.compliance-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+	.compliance-icon { font-size: 28px; }
+	.compliance-header h2 { font: 400 26px/1.2 var(--serif); color: var(--ink); margin: 0; }
+	.compliance-desc { font-size: 15px; color: #51454c; margin-bottom: 20px; }
+	.compliance-bullets { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+	.compliance-bullets li { font-size: 15px; line-height: 1.55; color: var(--ink); position: relative; padding-left: 24px; }
+	.compliance-bullets li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: bold; }
+	
+	.content-section { margin-bottom: 48px; }
+	.content-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.cards-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+	.spec-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+	.spec-card h3 { font: 400 22px var(--serif); color: var(--brand-dark); margin-bottom: 12px; }
+	.spec-card p { font-size: 14px; line-height: 1.5; color: #51454c; margin-bottom: 16px; }
+	.spec-card ul { padding-left: 20px; font-size: 14px; color: var(--ink); }
+	.spec-card li { margin-bottom: 8px; }
+	
+	.process-section { margin-bottom: 56px; }
+	.process-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.process-list { list-style: none; padding: 0; display: grid; gap: 20px; }
+	.process-list li { background: var(--paper); padding: 24px; border-left: 4px solid var(--brand); border-radius: 0 8px 8px 0; }
+	.process-list strong { font-size: 17px; color: var(--ink); display: block; margin-bottom: 6px; }
+	.process-list p { font-size: 14px; color: #51454c; margin: 0; }
+	
+	.cta-box { background: var(--brand-dark); color: #fff; padding: 48px 36px; border-radius: 8px; text-align: center; }
+	.cta-box h2 { font: 400 36px var(--serif); color: #fff; margin-bottom: 16px; }
+	.cta-box p { font-size: 16px; color: rgba(255,255,255,.85); max-width: 600px; margin: 0 auto 28px; }
+	.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+	.btn-primary { background: #25D366; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 700; border-radius: 4px; font-size: 14px; }
+	.btn-secondary { background: rgba(255,255,255,.15); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 14px; border: 1px solid rgba(255,255,255,.3); }
+</style>

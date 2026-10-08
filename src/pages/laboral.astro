@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<article class="page-container">
+		<header class="page-header">
+			<nav class="breadcrumb" aria-label="Navegación secundaria">
+				<a href="/">Inicio</a> &rsaquo; <span>Derecho Laboral</span>
+			</nav>
+			<span class="page-tag">Especialidad Jurídica</span>
+			<h1>Derecho Laboral y Defensa en Conflictos de Trabajo</h1>
+			<p class="lead">
+				Asesoría legal rigurosa e imparcial para trabajadores y empresas en rescisión de relaciones de trabajo, despidos injustificados, conciliación e indemnizaciones.
+			</p>
+		</header>
+
+		<!-- Compliance y Prevención Laboral -->
+		<section class="compliance-box" aria-labelledby="compliance-title">
+			<div class="compliance-header">
+				<span class="compliance-icon">💼</span>
+				<h2 id="compliance-title">Compliance Laboral y Prevención Patronal</h2>
+			</div>
+			<p class="compliance-desc">
+				Blindaje normativo integral para empresas y prevención de demandas laborales contenciosas antes de que escalen a tribunales.
+			</p>
+			<ul class="compliance-bullets">
+				<li><strong>Auditoría de Cumplimiento LFT y NOMs:</strong> Revisión de contratos individuales, reglamentos interiores de trabajo y cumplimiento de normas oficiales (incluyendo NOM-035 y NOM-037 de teletrabajo).</li>
+				<li><strong>Estructuración de Terminaciones Laborales:</strong> Elaboración de convenios de sustitución patronal, rescisión justificable y convenios de finiquito ratificados ante el Centro Federal de Conciliación y Registro Laboral (CFCRL).</li>
+				<li><strong>Protocolos de Prevención de Hostigamiento y Acoso:</strong> Implementación de políticas internas obligatorias de igualdad laboral y no discriminación exigidas por la autoridad.</li>
+				<li><strong>Prevención de Riesgos de Subcontratación (REPSE):</strong> Diagnóstico de esquemas de contratación de servicios especializados para evitar sanciones fiscales y laborales masivas.</li>
+			</ul>
+		</section>
+
+		<!-- Enfoques Duales -->
+		<section class="content-section">
+			<h2>Defensa y Estrategia Adaptada</h2>
+			<div class="cards-duo">
+				<div class="spec-card">
+					<h3>Para Trabajadores</h3>
+					<p>Defensa firme de tus derechos laborales ante terminaciones engañosas, rescisión sin justa causa o falta de pago de tus prestaciones de ley.</p>
+					<ul>
+						<li>Cálculo exacto de liquidación (3 meses + 20 días por año + prima de antigüedad)</li>
+						<li>Representación en audiencias de conciliación (CFCRL)</li>
+						<li>Demandas por despido injustificado e impago de aguinaldo/reparto de utilidades</li>
+					</ul>
+				</div>
+				<div class="spec-card">
+					<h3>Para Empresas y Patrones</h3>
+					<p>Estrategia preventiva y contenciosa para mitigar contingencias pasivas y sostener negociaciones laborales pacíficas.</p>
+					<ul>
+						<li>Rescisión de contrato con causa legal justificada (Art. 47 LFT)</li>
+						<li>Negociación de terminaciones de mutuo consentimiento</li>
+						<li>Defensa ante Juzgados Laborales por juicios individuales o colectivos</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Guía de Liquidación -->
+		<section class="process-section">
+			<h2>¿Qué prestaciones corresponden en una terminación?</h2>
+			<div class="table-wrapper">
+				<table class="legal-table">
+					<thead>
+						<tr>
+							<th>Concepto</th>
+							<th>Despido Injustificado</th>
+							<th>Renuncia Voluntaria</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Indemnización Constitucional</strong></td>
+							<td>3 meses de salario integrado</td>
+							<td>No aplica</td>
+						</tr>
+						<tr>
+							<td><strong>Prima de Antigüedad</strong></td>
+							<td>12 días por año trabajado</td>
+							<td>Aplica si cumple 15+ años (o en despido)</td>
+						</tr>
+						<tr>
+							<td><strong>Finiquito Proporcional</strong></td>
+							<td>Aguinaldo, vacaciones, prima vacacional</td>
+							<td>Aguinaldo, vacaciones, prima vacacional</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-box">
+			<h2>¿Tienes una situación laboral por resolver?</h2>
+			<p>Analizamos la vía más conveniente (conciliación o litigio) antes de tomar cualquier decisión apresurada.</p>
+			<div class="cta-actions">
+				<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" class="btn-primary">Asesoría Laboral por WhatsApp &rarr;</a>
+				<a href="mailto:iliriaviveros@gmail.com" class="btn-secondary">Enviar correo electrónico</a>
+			</div>
+		</section>
+	</article>
+</Layout>
+
+<style>
+	.page-container { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+	.breadcrumb { font-size: 13px; color: var(--color-muted); margin-bottom: 20px; }
+	.breadcrumb a { color: var(--brand); text-decoration: none; }
+	.page-tag { display: inline-block; background: var(--color-brand-100); color: var(--brand-dark); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .15em; padding: 6px 12px; border-radius: 4px; margin-bottom: 16px; }
+	.page-header h1 { font: 400 clamp(36px, 4vw, 54px)/1.08 var(--serif); color: var(--ink); margin-bottom: 16px; letter-spacing: -.03em; }
+	.lead { font-size: clamp(17px, 1.3vw, 20px); line-height: 1.6; color: #51454c; margin-bottom: 40px; }
+	
+	.compliance-box { background: var(--paper); border: 2px solid var(--accent); border-radius: 8px; padding: 36px; margin-bottom: 48px; }
+	.compliance-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+	.compliance-icon { font-size: 28px; }
+	.compliance-header h2 { font: 400 26px/1.2 var(--serif); color: var(--ink); margin: 0; }
+	.compliance-desc { font-size: 15px; color: #51454c; margin-bottom: 20px; }
+	.compliance-bullets { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+	.compliance-bullets li { font-size: 15px; line-height: 1.55; color: var(--ink); position: relative; padding-left: 24px; }
+	.compliance-bullets li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: bold; }
+	
+	.content-section { margin-bottom: 48px; }
+	.content-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.cards-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+	.spec-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+	.spec-card h3 { font: 400 22px var(--serif); color: var(--brand-dark); margin-bottom: 12px; }
+	.spec-card p { font-size: 14px; line-height: 1.5; color: #51454c; margin-bottom: 16px; }
+	.spec-card ul { padding-left: 20px; font-size: 14px; color: var(--ink); }
+	.spec-card li { margin-bottom: 8px; }
+	
+	.process-section { margin-bottom: 56px; }
+	.process-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.table-wrapper { overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: 8px; }
+	.legal-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+	.legal-table th, .legal-table td { padding: 16px 20px; border-bottom: 1px solid var(--line); }
+	.legal-table th { background: var(--paper); font-weight: 700; color: var(--brand-dark); }
+	
+	.cta-box { background: var(--brand-dark); color: #fff; padding: 48px 36px; border-radius: 8px; text-align: center; }
+	.cta-box h2 { font: 400 36px var(--serif); color: #fff; margin-bottom: 16px; }
+	.cta-box p { font-size: 16px; color: rgba(255,255,255,.85); max-width: 600px; margin: 0 auto 28px; }
+	.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+	.btn-primary { background: #25D366; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 700; border-radius: 4px; font-size: 14px; }
+	.btn-secondary { background: rgba(255,255,255,.15); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 14px; border: 1px solid rgba(255,255,255,.3); }
+</style>

@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<article class="page-container">
+		<header class="page-header">
+			<nav class="breadcrumb" aria-label="Navegación secundaria">
+				<a href="/">Inicio</a> &rsaquo; <span>Derecho Administrativo</span>
+			</nav>
+			<span class="page-tag">Especialidad Jurídica</span>
+			<h1>Derecho Administrativo y Regulación Sanitaria / Comercial</h1>
+			<p class="lead">
+				Defensa y asesoría legal frente a verificaciones, clausuras, negativas de licencias y procedimientos dictados por autoridades administrativas municipales, estatales y federales.
+			</p>
+		</header>
+
+		<!-- Compliance Administrativo -->
+		<section class="compliance-box" aria-labelledby="compliance-title">
+			<div class="compliance-header">
+				<span class="compliance-icon">🏢</span>
+				<h2 id="compliance-title">Compliance Administrativo y Regulatorio</h2>
+			</div>
+			<p class="compliance-desc">
+				Gobernanza y regularización de establecimientos, licencias y procesos operativos para garantizar el funcionamiento ininterrumpido de tu negocio.
+			</p>
+			<ul class="compliance-bullets">
+				<li><strong>Auditoría Regulatoria de Establecimientos Mercantiles:</strong> Verificación preventiva de avisos de funcionamiento, licencias de uso de suelo, permisos de enseres y visto bueno de seguridad e higiene.</li>
+				<li><strong>Protocolos ante Inspecciones (INVEA, COFEPRIS, PROFECO):</strong> Capacitación al personal sobre cómo atender legalmente actas de visita de verificación y evitar cierres inmediatos.</li>
+				<li><strong>Compliance de Protección Civil:</strong> Diagnóstico y actualización de programas internos de protección civil, dictámenes estructurales y permisos ambientales.</li>
+				<li><strong>Defensa en Licitaciones y Contratación Pública:</strong> Revisión previa de bases de licitación y recursos de inconformidad en procedimientos de compra gubernamentales.</li>
+			</ul>
+		</section>
+
+		<!-- Caso y Soluciones -->
+		<section class="content-section">
+			<h2>Áreas de Intervención Regulatoria</h2>
+			<div class="cards-duo">
+				<div class="spec-card">
+					<h3>Verificaciones e Inspecciones</h3>
+					<p>Atención oportuna ante la imposición de sellos de suspensión de actividades o clausura por parte del INVEA, COFEPRIS, PROFECO o alcaldías.</p>
+					<ul>
+						<li>Levantamiento y descongelamiento de sellos de clausura</li>
+						<li>Desglose de pruebas en actas de verificación</li>
+						<li>Impugnación de multas administrativas desmedidas</li>
+					</ul>
+				</div>
+				<div class="spec-card">
+					<h3>Controversias Gubernamentales</h3>
+					<p>Defensa frente al rechazo arbitrario de permisos, licencias de construcción, concesiones o incumplimientos en contratos de obra pública.</p>
+					<ul>
+						<li>Juicio de Nulidad ante Tribunales de Justicia Administrativa locales</li>
+						<li>Recursos de Inconformidad contra fallos de licitación</li>
+						<li>Amparo Administrativo contra negativas fictas</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-box">
+			<h2>¿Tu establecimiento o proyecto enfrenta una inspección?</h2>
+			<p>Analizamos el expediente de verificación para encontrar fallas de origen y lograr la reapertura o cancelación de la sanción.</p>
+			<div class="cta-actions">
+				<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" class="btn-primary">Consulta por WhatsApp &rarr;</a>
+				<a href="mailto:iliriaviveros@gmail.com" class="btn-secondary">Enviar correo electrónico</a>
+			</div>
+		</section>
+	</article>
+</Layout>
+
+<style>
+	.page-container { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+	.breadcrumb { font-size: 13px; color: var(--color-muted); margin-bottom: 20px; }
+	.breadcrumb a { color: var(--brand); text-decoration: none; }
+	.page-tag { display: inline-block; background: var(--color-brand-100); color: var(--brand-dark); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .15em; padding: 6px 12px; border-radius: 4px; margin-bottom: 16px; }
+	.page-header h1 { font: 400 clamp(36px, 4vw, 54px)/1.08 var(--serif); color: var(--ink); margin-bottom: 16px; letter-spacing: -.03em; }
+	.lead { font-size: clamp(17px, 1.3vw, 20px); line-height: 1.6; color: #51454c; margin-bottom: 40px; }
+	
+	.compliance-box { background: var(--paper); border: 2px solid var(--accent); border-radius: 8px; padding: 36px; margin-bottom: 48px; }
+	.compliance-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+	.compliance-icon { font-size: 28px; }
+	.compliance-header h2 { font: 400 26px/1.2 var(--serif); color: var(--ink); margin: 0; }
+	.compliance-desc { font-size: 15px; color: #51454c; margin-bottom: 20px; }
+	.compliance-bullets { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+	.compliance-bullets li { font-size: 15px; line-height: 1.55; color: var(--ink); position: relative; padding-left: 24px; }
+	.compliance-bullets li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: bold; }
+	
+	.content-section { margin-bottom: 48px; }
+	.content-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.cards-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+	.spec-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+	.spec-card h3 { font: 400 22px var(--serif); color: var(--brand-dark); margin-bottom: 12px; }
+	.spec-card p { font-size: 14px; line-height: 1.5; color: #51454c; margin-bottom: 16px; }
+	.spec-card ul { padding-left: 20px; font-size: 14px; color: var(--ink); }
+	.spec-card li { margin-bottom: 8px; }
+	
+	.process-section { margin-bottom: 56px; }
+	.process-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	
+	.cta-box { background: var(--brand-dark); color: #fff; padding: 48px 36px; border-radius: 8px; text-align: center; }
+	.cta-box h2 { font: 400 36px var(--serif); color: #fff; margin-bottom: 16px; }
+	.cta-box p { font-size: 16px; color: rgba(255,255,255,.85); max-width: 600px; margin: 0 auto 28px; }
+	.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+	.btn-primary { background: #25D366; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 700; border-radius: 4px; font-size: 14px; }
+	.btn-secondary { background: rgba(255,255,255,.15); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 14px; border: 1px solid rgba(255,255,255,.3); }
+</style>

@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<article class="page-container">
+		<header class="page-header">
+			<nav class="breadcrumb" aria-label="Navegación secundaria">
+				<a href="/">Inicio</a> &rsaquo; <span>Juicio de Amparo</span>
+			</nav>
+			<span class="page-tag">Especialidad Jurídica</span>
+			<h1>Juicio de Amparo y Defensa Constitucional</h1>
+			<p class="lead">
+				Protegemos tus derechos fundamentales ante actos arbitrarios, clausuras, congelamiento de cuentas y resoluciones ilegales dictadas por autoridades en México.
+			</p>
+		</header>
+
+		<!-- Compliance y Prevención -->
+		<section class="compliance-box" aria-labelledby="compliance-title">
+			<div class="compliance-header">
+				<span class="compliance-icon">🛡️</span>
+				<h2 id="compliance-title">Compliance y Gobernanza Constitucional</h2>
+			</div>
+			<p class="compliance-desc">
+				Prevención estratégica para empresas y particulares antes de que el acto de autoridad genere un daño irreparable a tus operaciones o patrimonio.
+			</p>
+			<ul class="compliance-bullets">
+				<li><strong>Auditoría de Actos Administrativos:</strong> Revisión preventiva de licencias, permisos y procedimientos de inspección para detectar vulnerabilidades antes de una clausura.</li>
+				<li><strong>Protocolos de Suspensión Preventiva:</strong> Diseño de rutas críticas de actuación legal inmediata ante visitas domiciliarias o requerimientos repentinos de autoridad.</li>
+				<li><strong>Monitoreo de Criterios Jurisprudenciales:</strong> Evaluación continua de precedentes de la SCJN y Tribunales Colegiados aplicables a tu sector.</li>
+				<li><strong>Blindaje Constitucional de Normas:</strong> Análisis de impacto y viabilidad de amparo contra leyes o reformas reglamentarias que afecten tu modelo de negocio.</li>
+			</ul>
+		</section>
+
+		<!-- Casos donde procede -->
+		<section class="content-section">
+			<h2>¿Cuándo Procede el Juicio de Amparo?</h2>
+			<div class="cards-duo">
+				<div class="spec-card">
+					<h3>Amparo Indirecto</h3>
+					<p>Contra leyes, reglamentos, clausuras inmediatas, órdenes de visita, inmovilización de cuentas bancarias o cualquier acto de autoridad que afecte tus derechos directamente.</p>
+					<ul>
+						<li>Clausura o suspensión de locales y obras</li>
+						<li>Bloqueo o congelamiento de cuentas por autoridades</li>
+						<li>Falta de respuesta (violación al derecho de petición)</li>
+					</ul>
+				</div>
+				<div class="spec-card">
+					<h3>Amparo Directo</h3>
+					<p>Contra sentencias definitivas, laudos o resoluciones que pongan fin a un juicio pronunciadas por tribunales civiles, laborales, administrativos o penales.</p>
+					<ul>
+						<li>Impugnación de laudos laborales desfavorables</li>
+						<li>Sentencias definitivas del TFJA en materia fiscal</li>
+						<li>Violaciones procesales durante el juicio principal</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Proceso -->
+		<section class="process-section">
+			<h2>Estrategia Paso a Paso</h2>
+			<ol class="process-list">
+				<li>
+					<strong>1. Análisis del Acto Reclamado</strong>
+					<p>Estudio minucioso de la notificación o acto de autoridad para identificar vicios constitucionales e inconstitucionalidad.</p>
+				</li>
+				<li>
+					<strong>2. Solicitud de la Suspensión del Acto</strong>
+					<p>Gestión urgente de la suspensión provisoria y definitiva para frenar de inmediato los efectos de la medida (evitar clausura o liberar cuentas).</p>
+				</li>
+				<li>
+					<strong>3. Tramitación y Desahogo de Pruebas</strong>
+					<p>Redacción técnica del libelo de amparo y acompañamiento durante todo el procedimiento ante Juzgados de Distrito o Tribunales Colegiados.</p>
+				</li>
+			</ol>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-box">
+			<h2>¿Enfrentas un acto de autoridad urgente?</h2>
+			<p>Analizo tu caso de forma personal con un enfoque estratégico y honesto sobre las posibilidades reales de suspensión y amparo.</p>
+			<div class="cta-actions">
+				<a href="https://wa.me/525581807624" target="_blank" rel="noopener noreferrer" class="btn-primary">Consultar por WhatsApp &rarr;</a>
+				<a href="mailto:iliriaviveros@gmail.com" class="btn-secondary">Enviar correo electrónico</a>
+			</div>
+		</section>
+	</article>
+</Layout>
+
+<style>
+	.page-container { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+	.breadcrumb { font-size: 13px; color: var(--color-muted); margin-bottom: 20px; }
+	.breadcrumb a { color: var(--brand); text-decoration: none; }
+	.page-tag { display: inline-block; background: var(--color-brand-100); color: var(--brand-dark); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .15em; padding: 6px 12px; border-radius: 4px; margin-bottom: 16px; }
+	.page-header h1 { font: 400 clamp(36px, 4vw, 54px)/1.08 var(--serif); color: var(--ink); margin-bottom: 16px; letter-spacing: -.03em; }
+	.lead { font-size: clamp(17px, 1.3vw, 20px); line-height: 1.6; color: #51454c; margin-bottom: 40px; }
+	
+	.compliance-box { background: var(--paper); border: 2px solid var(--accent); border-radius: 8px; padding: 36px; margin-bottom: 48px; }
+	.compliance-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+	.compliance-icon { font-size: 28px; }
+	.compliance-header h2 { font: 400 26px/1.2 var(--serif); color: var(--ink); margin: 0; }
+	.compliance-desc { font-size: 15px; color: #51454c; margin-bottom: 20px; }
+	.compliance-bullets { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+	.compliance-bullets li { font-size: 15px; line-height: 1.55; color: var(--ink); position: relative; padding-left: 24px; }
+	.compliance-bullets li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: bold; }
+	
+	.content-section { margin-bottom: 48px; }
+	.content-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.cards-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+	.spec-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+	.spec-card h3 { font: 400 22px var(--serif); color: var(--brand-dark); margin-bottom: 12px; }
+	.spec-card p { font-size: 14px; line-height: 1.5; color: #51454c; margin-bottom: 16px; }
+	.spec-card ul { padding-left: 20px; font-size: 14px; color: var(--ink); }
+	.spec-card li { margin-bottom: 8px; }
+	
+	.process-section { margin-bottom: 56px; }
+	.process-section h2 { font: 400 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 24px; }
+	.process-list { list-style: none; padding: 0; display: grid; gap: 20px; }
+	.process-list li { background: var(--paper); padding: 24px; border-left: 4px solid var(--brand); border-radius: 0 8px 8px 0; }
+	.process-list strong { font-size: 17px; color: var(--ink); display: block; margin-bottom: 6px; }
+	.process-list p { font-size: 14px; color: #51454c; margin: 0; }
+	
+	.cta-box { background: var(--brand-dark); color: #fff; padding: 48px 36px; border-radius: 8px; text-align: center; }
+	.cta-box h2 { font: 400 36px var(--serif); color: #fff; margin-bottom: 16px; }
+	.cta-box p { font-size: 16px; color: rgba(255,255,255,.85); max-width: 600px; margin: 0 auto 28px; }
+	.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+	.btn-primary { background: #25D366; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 700; border-radius: 4px; font-size: 14px; }
+	.btn-secondary { background: rgba(255,255,255,.15); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 14px; border: 1px solid rgba(255,255,255,.3); }
+</style>
