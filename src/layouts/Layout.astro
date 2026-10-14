@@ -1,5 +1,14 @@
 ---
 import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+const {
+	title = 'Abogada en Xalapa, Veracruz | Amparo, Laboral y Fiscal | Iliria Viveros',
+	description = 'Despacho jurídico en Xalapa, Veracruz. Iliria Viveros, abogada y maestra en amparo: derecho laboral, defensa fiscal ante el SAT y cumplimiento normativo para personas y empresas.',
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -10,8 +19,10 @@ import '../styles/global.css';
 		<link rel="icon" type="image/x-icon" href="/iliria-viveros-favicon.ico" />
 		<link rel="icon" type="image/svg+xml" href="/iliria-viveros-favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Iliria Viveros | Abogada y Maestra en Amparo</title>
-		<meta name="description" content="Estrategia jurídica para asuntos que requieren una defensa cuidadosa. Amparo, derecho laboral y fiscal." />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="geo.region" content="MX-VER" />
+		<meta name="geo.placename" content="Xalapa, Veracruz" />
 
 		<link rel="canonical" href={new URL(Astro.url.pathname, 'https://iliriaviveros.com').href} />
 		<link rel="sitemap" href="/sitemap-index.xml" />
@@ -20,8 +31,8 @@ import '../styles/global.css';
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="es_MX" />
 		<meta property="og:url" content={new URL(Astro.url.pathname, 'https://iliriaviveros.com').href} />
-		<meta property="og:title" content="Iliria Viveros | Defensa Legal" />
-		<meta property="og:description" content="Abogada especialista en amparo, derecho laboral y defensa administrativa/fiscal. Consulta tu caso hoy." />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<meta property="og:image" content="https://iliriaviveros.com/images/hero.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		
@@ -37,9 +48,20 @@ import '../styles/global.css';
 			"email": "iliriaviveros@gmail.com",
 			"address": {
 				"@type": "PostalAddress",
+				"addressLocality": "Xalapa",
+				"addressRegion": "Veracruz",
 				"addressCountry": "MX"
 			},
-			"areaServed": "México",
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 19.5438,
+				"longitude": -96.9102
+			},
+			"areaServed": [
+				{ "@type": "City", "name": "Xalapa" },
+				{ "@type": "State", "name": "Veracruz" },
+				{ "@type": "Country", "name": "México" }
+			],
 			"knowsAbout": ["Juicio de Amparo", "Derecho Laboral", "Derecho Fiscal", "Derecho Administrativo"]
 		}
 		</script>
